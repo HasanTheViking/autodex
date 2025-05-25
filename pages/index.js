@@ -1,10 +1,10 @@
-import ProductCard from '../components/ProductCard';
+import ProductCard from '../components/ProductCard'
 
 const PRODUCTS = [
   { id: 1, name: 'Autokozmetika', price: 19.99, description: 'Kvalitná autokozmetika', image: '/placeholder.png' },
-  { id: 2, name: 'Autodoplnok', price: 9.99, description: 'Praktický autodoplnok', image: '/placeholder.png' },
-  { id: 3, name: 'Pneumatika', price: 49.99, description: 'Celoročná pneumatika', image: '/placeholder.png' },
-];
+  { id: 2, name: 'Autodoplnok',    price: 9.99,  description: 'Praktický autodoplnok',   image: '/placeholder.png' },
+  { id: 3, name: 'Pneumatika',      price: 49.99, description: 'Celoročná pneumatika',     image: '/placeholder.png' },
+]
 
 export default function Home() {
   return (
@@ -13,5 +13,5 @@ export default function Home() {
         <ProductCard key={p.id} product={p} />
       ))}
     </section>
-  );
+  )
 }
