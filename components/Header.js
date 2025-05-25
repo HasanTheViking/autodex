@@ -1,9 +1,9 @@
-import Link from 'next/link';
-import { useCart } from './CartContext';
+import Link from 'next/link'
+import { useCart } from './CartContext'
 
 export default function Header() {
-  const { cart } = useCart();
-  const count = cart.reduce((sum, item) => sum + item.qty, 0);
+  const { cart } = useCart()
+  const count = cart.reduce((sum, item) => sum + item.qty, 0)
 
   return (
     <header className="bg-white shadow">
@@ -26,5 +26,5 @@ export default function Header() {
         </nav>
       </div>
     </header>
-  );
+  )
 }
